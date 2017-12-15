@@ -1,0 +1,59 @@
+.headr-font{
+			 background: #1d1d1d;
+			 height: 30px;
+		}
+		.wrapper-font{
+margin: 0 auto;
+  width: 1280px;
+		}
+		.head-name{
+			 float:  left;
+			 height: 30px;
+			 line-height: 30px;
+			 color:#c1c8d2;
+			 margin-left: 10px;
+		}
+		.head-sys-area{
+			float: right;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+		}
+		.head-sys-area .op-area{
+			margin-right: 10px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+		}
+		 .op-area .split {
+		 	position: relative;
+  top: 2px;
+  width: 1px;
+  height: 10px;
+  margin: 0 2px;
+  display: inline-block;
+  background: #4b6993;
+ 
+}
+.op-area  a{
+	color: #4b6993;
+	text-decoration: none;
+	}
+
+	.op-area .user-name{
+		margin-right: 10px;
+
+	}
+	.op-area .role-name{
+		margin-right: 10px;
+	}
+	.headr-font .wrapper-font .head-sys-area .op-area a {
+  color: #4b6993;
+  text-decoration: none !important;
+}
+.headr-font .wrapper-font  .op-area a:hover {
+  color: #2b86ed ;
+}
+.headr-font .wrapper-font  .op-area a:visited {
+  color: #4b6993;
+}

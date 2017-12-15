@@ -1,0 +1,603 @@
+/*主体右侧*/
+.main {
+	width: 78%;	/*min-width: 1000px;*/
+	height: auto;
+	margin: 0 auto;
+	padding: 0 40px; 
+	float: left;
+}
+.main-title {
+	width: 100%;
+	height: 30px;
+	text-indent: 10px;
+	line-height: 30px;
+	background: #f2f2f2;
+	color: #666;
+	margin-top: 20px;
+}
+
+/*用户 列表 start */
+table.userList {
+	width: 100%;
+	line-height: 30px;
+}
+table.userList tr td {
+
+	/*text-align: left;*/
+	height: 40px;
+}
+table.userList tr td.w-50 {
+	width: 50px;
+}
+table.userList tr td.w-60 {
+	width: 60px;
+}
+table.userList tr td.w-70 {
+	width: 70px;
+}
+table.userList tr td.w-95 {
+	width: 95px;
+}
+table.userList tr td.w-90 {
+	width: 90px;
+}
+table.userList tr td.w-180 {
+	width: 180px;
+}
+table.userList tr td.w-220 {
+	width: 220px;
+}
+table.userList tr td.w-240 {
+	width: 240px;
+}
+table.userList tr td.w-300 {
+	width: 300px;
+}
+table.userList tr td.w-360 {
+	width: 360px;
+}
+table.userList tr.maxH td {
+	height: 100px;
+}
+.type {
+	float: left;
+	margin-right: 20px;
+}
+.type input, .type span, .type label {
+	display: inline-block;
+	float: left;
+}
+.type input {
+	width: 15px;
+	height: 15px;
+	margin: 8px 5px 0 0;
+	display: inline-block;
+}
+
+/*用户 列表 end*/
+.divBtn {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+
+/*角色管理 start*/
+.search {
+	width: 100%;
+	height: 30px;
+}
+.search input, .search select, .search a, .search span {
+	display: inline-block;
+	float: left;
+	line-height: 30px;
+	margin-right: 10px;
+}
+.message {
+	width: 100%;
+	line-height: 30px;
+}
+
+/*列表 start*/
+table.tableList {
+	margin: 10px 0 0 0;
+}
+table.tableList tr td {
+	color: #666;
+	height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	word-break: break-all;
+}
+table.tableList tr:first-child td {
+	background: #f2f2f2;
+	color: #333;
+}
+table.tableList tr td:last-child {
+	border-right: 0px;
+}
+table.tableList tr td.special {
+}
+table.tableList tr td.special span, table.tableList tr td.special a {
+	display: block;
+}
+
+/*模块类*/
+table.module tr td {
+	color: #333;
+}
+table.module tr:first-child td {
+	font-size: 14px;
+	font-weight: bold;
+}
+.td-min {
+	width: 14%;
+}
+.checkbox {
+	width: 70%;
+	height: 40px;
+	margin: 0 auto;
+}
+.checkbox input[type=checkbox] {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin: 13px 5px 0 0;
+}
+.checkbox span {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.power {
+	width: 100%;
+	height: 30px;
+}
+.power-left {
+	float: left;
+	width: 200px;
+	line-height: 15px;
+	border-left: 3px solid #4b6993;
+	text-indent: 8px;
+	color: #4b6993;
+	margin-top: 8px;
+	font-size: 14px;
+}
+.power-left span {
+	font-size: 12px;
+	padding-left: 10px;
+}
+.power-right {
+	width: 50%;
+	float: right;
+}
+.power-right input {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	float: right;
+	margin: 8px 5px 0 20px;
+}
+.power-right span {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	float: right;
+}
+
+/*编辑账户信息 start*/
+.account {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+.userPic {
+	width: 80px;
+	height: auto;
+	float: left;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+.userPic .pic {
+	width: 80px;
+	height: 80px;
+	background: #dbdbdb;
+	border-radius: 40px;
+	overflow: hidden;
+}
+.userPic .pic img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.userPic span {
+	display: block;
+	line-height: 30px;
+	color: #1a6dca;
+	text-align: center;
+}
+.userInfo {
+	width: 85%;
+	height: auto;
+	float: left;
+}
+.userInfo ul li {
+	width: 31%;
+}
+
+/*创建用户 切换*/
+.roleTypeList {
+	display: none;
+}
+.row {
+	width: 740px;
+	height: auto;	/*margin-top: 10px;
+	margin-left: -5px;*/
+}
+.list {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.list-detail {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+div.row  ol>li {
+	width: 45%;
+	line-height: 30px;
+	float: left;
+	margin-top: 10px;
+}
+.row  li>span {
+	display: inline-block;
+	float: left;
+	padding-right: 10px;
+	font-size: 12px;
+}
+.row  .img {
+	width: 100%;
+	height: 85px;
+}
+
+.row .list img{
+	float: left;
+}
+
+.row .img-icon {
+	width: 80px;
+	height: 80px;
+	float: left;
+	position: relative;
+}
+ .row .img-icon:after{
+ 	content: '';
+	background: url(../images/close.png)center center no-repeat;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+ }
+
+.row .list li>span:nth-child(1) {
+	width: 60px;
+}
+.row .list li>span:nth-child(3) {
+	padding-left: 10px;
+}
+.row .list-detail li>span:nth-child(1) {
+	width: 100px;
+}
+.img span {
+	line-height: 80px;
+}
+
+.user-detail ul>li{
+	margin-top: 0px !important;
+}
+
+/*  自己加的    */
+.form-control {
+	display: block;
+	width: 180px;
+	height: 28px;
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 1.42857143;
+	color: #9c9c9c;  /* background-color: #fff; */
+
+	/* background-image: none; */
+	border: 1px solid #ccc;
+	font-family: "microsoft YaHei", "宋体", Arial;
+}
+
+.big-textarea-332 {
+	width: 332px !important;
+	height: 90px;
+}
+
+/*鼠标悬停消息*/
+.hoverMessage {
+	border: 1px solid #d9dadc;
+	margin-top: 30px;
+	width: 400px;
+	font-size: 12px;
+	height: auto;
+	background-color: #fff;
+	position:absolute;
+}
+.hoverMessage .triangle1 {
+	position: absolute;
+	left: 50%;
+	top: -20px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-width: 10px;
+	border-style: dashed dashed solid dashed;
+	border-color: transparent transparent #d9dadc transparent;
+}
+.hoverMessage .triangle2 {
+	position: absolute;
+	left: 50%;
+	top: -18px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-width: 10px;
+	border-style: dashed dashed solid dashed;
+	border-color: transparent transparent #fff transparent;
+}
+.message-content {
+	padding: 0 20px;
+	height: 40px;
+	padding-bottom: 10px; 
+}
+.message-content p{
+	margin-top: 10px;
+}
+.message-content p:nth-child(2) {
+	float: right;
+	color: #999999;
+}
+
+/*新增====创建角色*/
+.p-r-5{
+	padding-right:5px;
+}
+.p-lr-5{
+	padding:0 5px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.spec-range{
+	width:100%;
+	height:160px;
+}
+.spec-range span{
+	display:inline-block;
+	margin-right:10px;
+}
+
+.spec-relation{
+	width:100%;
+	height:20px;
+}
+
+.spec-relation span{
+	display:inline-block;
+	margin-right:10px;
+}
+
+.range-right a{
+	padding-right:10px;
+}
+.range-right .note{
+	color:#9c9c9c;
+}
+.range-right .units-list{
+	width:500px;
+	height:135px;
+	overflow-y:auto;
+	border:1px solid #dedede;
+}
+.range-right .units-list ul li{
+	display:block;
+	width:95%;
+	margin:10px 10px 0 10px;
+}
+.range-right .units-list ul li:last-child{
+	margin-bottom:10px;
+}
+.range-right .units-list ul li .remove-icon{	
+	display:inline-block;
+	width:16px;
+	height:17px;
+	background:url(../images/close-icon.png) no-repeat;
+	vertical-align:middle;
+	margin-left:5px;
+}
+/*弹窗*/
+.modal{
+	background-color: #FFFFFF;
+	z-index: 1001;
+	position: absolute;
+	left: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0px;
+	height:auto;
+	padding-bottom:50px;
+}
+.modal-big{
+	top:20%;
+}
+.modal.modal-w620{
+	width:620px;
+	top:20%;
+}
+.modal.modal-w650{
+	width:650px;
+}
+.modal .modal-con{
+	width:95%;
+	margin:0 auto;
+	margin-top:20px;
+	height: auto;
+	overflow: hidden;
+}
+.modal .modal-con input[type='checkbox']{
+	vertical-align:middle;
+	margin-right:5px;
+	width:15px;
+	height:15px;
+}
+.modal .modal-con .txt-left tr td{
+	text-align:left;
+	padding:0 15px;
+}
+.modal .modal-btn{
+	width:354px;
+	margin:0 auto;
+}
+.modal .modal-btn a{
+	margin-left:20px;
+}
+.modal .tips-txt{
+	text-align:left;
+}
+/*搜索框*/
+.form-inline {
+    margin-bottom: 5px;
+    margin-top:20px;
+}
+.form-inline .form-group {
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.form-inline .form-group select,.form-inline .form-group input{
+	min-width:120px;
+	height:28px;
+	line-height:28px;
+	border: 1px solid #e0e0e0;
+    padding: 0 10px;
+    color:#9c9c9c;
+}
+.form-inline .form-group label{
+	display:inline-block;
+	text-align:right;
+	color:#666666;
+	margin-right:10px;
+}
+.form-inline .form-group .w400{
+	width:400px;
+}
+.form-inline .sel-count strong{
+	padding:0 3px;
+}
+
+ /*首页*/
+.welcome{
+    padding:100px 0;
+    text-align:center;
+}
+.welcome .row1,.welcome .row2{
+    color:#303b4a;
+}
+.welcome .row1{
+     font-size:30px;
+}
+.welcome .row2{
+     font-size:48px;
+     margin:32px 0;
+}
+.welcome .row3{
+     font-size:24px;
+}
+.welcome .row4{
+    font-size:18px;
+    color:#4a6895;
+    margin-top:50px;
+}
+.bottom{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    height:180px;
+    background:url(../images/bot_bg.jpg) no-repeat #fafafa center bottom;
+}
+/*ry-ui问题*/
+header img{
+	vertical-align: middle;
+}
+
+.date-picker{
+	width: 280px;
+	height: 30px;
+	border: 1px solid #e0e0e0;
+}
+.date-picker-wrapper ,.date-picker-wrapper *{
+	box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+}
+.ry-pager .prev .fa, .ry-pager .next .fa {
+    top: 4px;
+}
+.ry-sidebar{
+	height: 100%;
+}
+.ry-sidebar .level1-wrapper a{
+	display: block;
+}
+
+/*首页*/
+.main-container{
+   width:100%;
+   height:100%;
+   min-height:600px;
+   position:relative;
+}
+ #welcome{
+    text-align:center;
+	position:relative;
+	padding:100px 0;
+}
+#welcome .row1,#welcome .row2{
+    color:#303b4a;
+}
+#welcome .row1{
+
+    font-size:30px;
+}
+#welcome .row2{
+    font-size:48px;
+    margin:32px 0;
+}
+#welcome .row3{
+    font-size:24px;
+}
+#welcome .row4{
+    font-size:18px;
+    color:#4a6895;
+    margin-top:50px;
+}
+.main-container .bottom{
+    position:absolute;
+	bottom:0;
+    width:100%;
+    height:180px;
+    background:url(../images/bot_bg.jpg) no-repeat #fafafa center;
+}

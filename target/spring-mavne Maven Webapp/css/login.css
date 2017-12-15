@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	color: #333333;
+	font-family: "microsoft YaHei", "宋体", Arial;
+	background: #eeeeee;
+}
+a {
+	color: #2d2d2d;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*a:hover {
+	color: #cf0000;
+	text-decoration: none
+}*/
+img, a img {
+	border: 0px;
+}
+ul {
+	list-style: none;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+ul li {
+	list-style: none;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+form {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+.clear {
+	width: 100%;
+	height: 0px;
+	line-height: 0px;
+	clear: both
+}
+input, select {
+	font-family: "microsoft YaHei", "宋体", Arial;
+	font-size: 12px;
+}
+input:focus {
+	outline: none;
+}
+
+.text-line {
+	color: #2b86ed;
+	text-decoration: underline;
+	float: right;
+	font-size: 12px;
+}
+
+/*登录页面*/
+.page-login {
+	width: 1280px;
+	height: 100%;	/*min-height: 800px;*/
+	margin: 0 auto;
+	background: url(../images/login/bg.jpg) 50% 50% no-repeat;
+	overflow:hidden;
+}
+.space {
+	width: 100%;
+	height: 200px;
+}
+.login {
+	width: 240px;
+	min-height: 205px;
+	border: 1px solid #cccccc;
+	padding: 30px 90px;
+	background: #fbfbfb;
+	margin: 0 auto;
+}
+.login-title {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #4ab3fb;
+}
+.login-user {
+	width: 100%;
+}
+.login-user ul li {
+	width: 218px;
+	height: 40px;
+	border: 1px solid #d5d6db;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+.login-user ul li span {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+	color: #f04e78;
+	border-right: 1px solid #364c6c;
+}
+.login-user ul li input {
+	display: inline-block;
+	float: left;
+	width: 135px;
+	height: 25px;
+	margin-top: 7px;
+	padding: 0px 10px;
+	color: #898989;;
+	line-height: 20px;
+	border: 0px;
+	background: none;
+}
+.login-icon1 {
+	background: url(../images/login/icon1.png) 4% 50% no-repeat;
+}
+.login-icon2 {
+	background: url(../images/login/icon2.png) 4% 50% no-repeat;
+}
+.login-button {
+	width: 100%;
+	height: 40px;
+	margin: 25px auto 0 auto;
+	background: #f04e78;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 3px;
+	display: block;
+	font-size: 14px;
+}
+.login-code {
+	width: 100%;
+	height: 40px;
+	margin: 10px auto 0 auto;
+}
+.login-code input {
+	display: inline-block;
+	float: left;
+	width: 88px;
+	height: 38px;
+	border: 1px solid #e2e2e2;
+	padding: 0 5px;
+}
+.login-code span {
+	display: inline-block;
+	width: 78px;
+	height: 38px;
+	border: 1px solid #e2e2e2;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.login-code span a {
+	display: block;
+}
+.login-code a {
+	display: inline-block;
+	float: right;
+	line-height: 40px;
+	text-decoration: underline;
+	color: #f04e78;
+}
+.login-info {
+	width: 420px;
+	margin: 20px auto 0 auto;
+	color: #848484;
+	line-height: 25px;
+}
+
+/*手机绑定*/
+.login-tel {
+	width: 510px;
+	height: auto;
+	margin: 0 auto;
+
+}
+.login-tel-title {
+	width: 100%;
+	height: 30px;
+}
+.login-tel-title ul li {
+	width: 30%;
+	height: 30px;
+	float: left;
+}
+.login-tel-title ul li a {
+	display: block;
+	width: 130px;
+	height: 28px;
+}
+.login-tel-title ul li a .num {
+	display: inline-block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+	background: #bdbdbd;
+	color: #fff;
+}
+.login-tel-title ul li a span {
+	display: inline-block;
+	float: left;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	margin-left: 10px;
+}
+.login-tel-title ul li a.checked, .login-tel-title ul li a:hover {
+	border-bottom: 2px solid #1a6dca;
+}
+.login-tel-title ul li a.checked .num, .login-tel-title ul li a:hover .num {
+	background: #1a6dca;
+	color: #fff;
+}
+.login-tel-title ul li a.checked span, .login-tel-title ul li a:hover span {
+	color: #1a6dca;
+}
+.login-tel-main {
+	width: 100%;
+	height: auto;
+	margin: 30px auto 0 auto;
+}
+.login-tel-main ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+.w-100 {
+	width: 100%;
+}
+.w-70 {
+	width: 70px;
+}
+.w-260 {
+	width: 260px;
+}
+.w-150 {
+	width: 150px;
+}
+
+/*公用input*/
+.l-Input {
+	width: 228px;
+	height: 28px;
+	border: 1px solid #dedede;
+	padding: 0 10px;
+	display: inline-block;
+	float: left;
+}
+.l-Input-min {
+	width: 138px;
+	height: 28px;
+	border: 1px solid #dedede;
+	padding: 0 10px;
+	display: inline-block;
+	float: left;
+}
+
+/*公用按钮*/
+.btn-80 {
+	width: 80px;
+	height: 30px;
+	background: #f04e78;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+}
+
+.btn-80-vail {
+	width: 80px;
+	height: 30px;
+	background: #C0C0C0;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+}
+
+.btn-140 {
+	width: 140px;
+	height: 40px;
+	background: #f04e78;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	line-height: 40px;
+	display: block;
+	margin: 20px auto 0 auto;
+}
+a.btn-140:hover {
+	color: #fff;
+}
+
+/*密码修改成功*/
+.login-success {
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	background: url(../images/login/icon3.png) 0 50% no-repeat;
+	text-indent: 50px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #333333;
+}
+.logo{
+	width: 445px;
+	height: 38px;
+	background: url(../images/login/logo.png) center center no-repeat;
+	margin:30px 0 180px 30px;
+}
