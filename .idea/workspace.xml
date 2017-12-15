@@ -2,38 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcbda1e5-b6de-4760-9652-0e197b1c73fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_9.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/lib/log4j-api-2.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/lib/log4j-core-2.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/lib/log4j-slf4j-impl-2.8.2.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/interceptor/BaseInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/interceptor/BaseInterceptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/interceptor/MaliciousRequestInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/interceptor/MaliciousRequestInterceptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/interceptor/Provider.class" afterPath="$PROJECT_DIR$/target/classes/com/interceptor/Provider.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/interceptor/BaseInterceptor.class" afterPath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/interceptor/BaseInterceptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/interceptor/MaliciousRequestInterceptor.class" afterPath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/interceptor/MaliciousRequestInterceptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/interceptor/Provider.class" afterPath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/interceptor/Provider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/springMav_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/springMav_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springMav.iml" afterPath="$PROJECT_DIR$/springMav.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/interceptor/BaseInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/interceptor/BaseInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/interceptor/Provider.java" afterPath="$PROJECT_DIR$/src/main/java/com/interceptor/Provider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mapper/xml/SysEventMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/xml/SysEventMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mapper/xml/SysEventMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/mapper/xml/SysEventMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/mapper/xml/SysEventMapper.xml" afterPath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/classes/com/mapper/xml/SysEventMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/spring-mavne Maven Webapp/WEB-INF/web.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_9.xml" />
     </list>
     <ignored path="springMav.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1246,12 +1225,20 @@
       <workItem from="1513059938142" duration="12225000" />
       <workItem from="1513130766753" duration="38611000" />
       <workItem from="1513303478251" duration="7864000" />
-      <workItem from="1513324979689" duration="7093000" />
+      <workItem from="1513324979689" duration="7137000" />
     </task>
+    <task id="LOCAL-00001" summary="xkt">
+      <created>1513332113774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513332113774</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227601000" />
+    <option name="totallyTimeSpent" value="227645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1310,7 +1297,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="xkt" />
+    <option name="LAST_COMMIT_MESSAGE" value="xkt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
