@@ -1,8 +1,9 @@
 package com.service;
 
-import com.baomidou.mybatisplus.plugins.Page;
 import com.bean.SysEvent;
+import com.mapper.SysEventMapper;
 import net.sf.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.stereotype.Service;
 import org.xml.sax.SAXException;
@@ -11,6 +12,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,8 +21,10 @@ import java.util.Map;
 @Service
 @CacheConfig(cacheNames = "sysEvent")
 public class SysEntityService extends BaseService<SysEvent> {
+    @Autowired
+    protected SysEventMapper mapper;
 
-    public Page<SysEvent> query(SysEvent event) throws ParserConfigurationException, IOException, SAXException {
+    public SysEvent query(SysEvent event) throws ParserConfigurationException, IOException, SAXException {
 
         Map<String,Object> map=new HashMap<>();
         JSONObject jsonObject = JSONObject.fromObject(event);
@@ -40,17 +44,8 @@ public class SysEntityService extends BaseService<SysEvent> {
                 map.put(next.toString(),value);
             }
         }
+        List<Long> longs = mapper.selectIdPage(map);
 
-        Page<SysEvent> page=super.query(map);
-        for (SysEvent sysEvent : page.getRecords()){
-            if(sysEvent!=null){
-                Long createBy = sysEvent.getCreateBy();
-                if (createBy!=null){
-                    sysEvent.setUserName("233");
-                }
-
-            }
-        }
-        return page;
+        return new SysEvent();
     }
 }
