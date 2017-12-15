@@ -20,10 +20,8 @@ public class Provider implements ApplicationContextAware ,BaseProvider{
 
         String method = parameter.getMethod();
         Object[] param = parameter.getParam();
-
         Object o = InstanceUtils.invokeMethod(bean, method, param);
-        Parameter parameter1 = new Parameter(o);
-        return parameter1;
+        return new Parameter(o);
     }
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {

@@ -118,12 +118,6 @@
       <groupId>com.baomidou</groupId>
       <artifactId>mybatis-plus</artifactId>
       <version>${mybatis-plus.version}</version>
-     <!-- <exclusions>
-        <exclusion>
-          <groupId>com.github.jsqlparser</groupId>
-          <artifactId>jsqlparser</artifactId>
-        </exclusion>
-      </exclusions>-->
     </dependency>
     <!-- spring核心包 -->
     <dependency>
@@ -216,7 +210,7 @@
       <version>${druid.version}</version>
     </dependency>
     <!-- 日志文件管理包 -->
-    <dependency>
+   <!-- <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
@@ -225,17 +219,39 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.17</version>
-    </dependency>
+    </dependency>-->
       <dependency>
           <groupId>commons-logging</groupId>
           <artifactId>commons-logging-api</artifactId>
           <version>1.1</version>
       </dependency>
-     <!-- <dependency>
-          <groupId>org.apache.logging.log4j</groupId>
-          <artifactId>log4j-api</artifactId>
-          <version>2.7</version>
-      </dependency>-->
+      <dependency>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+          <version>1.2.14</version>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>jcl-over-slf4j</artifactId>
+          <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+          <version>${slf4j.version}</version>
+      </dependency>
+<!--
+
+      &lt;!&ndash; <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-api</artifactId>
+           <version>2.7</version>
+       </dependency>&ndash;&gt;
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
@@ -246,6 +262,7 @@
       <artifactId>log4j-slf4j-impl</artifactId>
       <version>${log4j.version}</version>
     </dependency>
+-->
 
     <dependency>
       <groupId>org.db4j</groupId>

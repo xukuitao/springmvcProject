@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - ibase4j@localhost" uuid="a0a90b10-a64e-425d-9051-21582348d571">
+    <data-source name="MySQL - ibase4j2@localhost" uuid="85a4e44a-1401-49f7-a0a6-f692b8a5163b">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>ibase4j.*</schema-pattern>
-      <default-schemas>ibase4j.*</default-schemas>
+      <schema-pattern>ibase4j2.*</schema-pattern>
+      <default-schemas>ibase4j2.*</default-schemas>
     </data-source>
   </component>
 </project>

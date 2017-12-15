@@ -1,7 +1,8 @@
 package com.interceptor;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.app.AutoApp;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
@@ -12,8 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * Created by Administrator on 2017/12/6.
  */
 public class BaseInterceptor extends HandlerInterceptorAdapter {
-    protected final Logger logger = LogManager.getLogger();
-
+    static final Logger logger= LoggerFactory.getLogger(AutoApp.class);
     private BaseInterceptor[] interceptors;
 
     public void setNextInterceptor(BaseInterceptor... nextInterceptors){
