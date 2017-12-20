@@ -7,5 +7,11 @@
       <schema-pattern>ibase4j2.*</schema-pattern>
       <default-schemas>ibase4j2.*</default-schemas>
     </data-source>
+    <data-source name="MySQL - ibase4j@localhost" uuid="5fc2aa49-519e-467d-8adf-3784e4558d12">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>ibase4j.*</schema-pattern>
+      <default-schemas>ibase4j.*</default-schemas>
+    </data-source>
   </component>
 </project>

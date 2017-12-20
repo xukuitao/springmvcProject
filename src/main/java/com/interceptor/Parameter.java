@@ -1,8 +1,5 @@
 package com.interceptor;
 
-import com.baomidou.mybatisplus.plugins.Page;
-import com.baomidou.mybatisplus.toolkit.IdWorker;
-
 import java.io.Serializable;
 import java.util.List;
 
@@ -33,7 +30,7 @@ public class Parameter implements Serializable {
     private Object[] param;
     private Object result;
 
-    private final String no = "[" + IdWorker.getId() + "]";
+//    private final String no = "[" + IdWorker.getId() + "]";
 
     public String getService() {
         return service;
@@ -61,9 +58,11 @@ public class Parameter implements Serializable {
         return this;
     }
 
+/*
     public String getNo() {
         return no;
-    }
+//    }
+*/
 
     public Parameter setResult(Object result) {
         this.result = result;
@@ -81,12 +80,12 @@ public class Parameter implements Serializable {
         return null;
     }
 
-    public Page<?> getResultPage() {
+    /*public Page<?> getResultPage() {
         if (result instanceof Page<?>) {
             return (Page<?>)result;
         }
         return null;
-    }
+    }*/
 
     public Long getResultLong() {
         if (result instanceof Long) {

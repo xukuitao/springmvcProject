@@ -1,8 +1,5 @@
 package com.bean;
 
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.enums.IdType;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
@@ -11,18 +8,14 @@ import java.util.Date;
 @SuppressWarnings("serial")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public abstract class BaseModel implements Serializable {
-	@TableId(value = "id_", type = IdType.ID_WORKER)
 	private Long id;
-	@TableField("enable_")
 	private Integer enable;
-	@TableField("remark_")
 	private String remark;
 	private Long createBy;
 	private Date createTime;
 	private Long updateBy;
 	private Date updateTime;
 
-	@TableField(exist = false)
 	private String keyword;
 
 	/**

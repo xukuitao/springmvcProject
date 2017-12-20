@@ -3,7 +3,7 @@
 <mapper namespace="com.mapper.SysEventMapper">
 	<select id="selectIdPage" parameterType="java.util.Map" resultType="java.lang.Long">
 		select e.id_ from sys_event e left join sys_user u on e.create_by = u.id_
-		where u.id_=1
+		where u.user_name='admin'
 		<!--<where>
 			<if test="cm.keyword != null and cm.keyword != ''">
 				u.user_name like CONCAT('%',#{cm.keyword},'%')

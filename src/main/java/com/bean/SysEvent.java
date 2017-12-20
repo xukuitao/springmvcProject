@@ -1,29 +1,20 @@
 package com.bean;
 
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.annotations.TableName;
-
-@TableName("sys_event")
 @SuppressWarnings("serial")
 public class SysEvent extends BaseModel {
-	@TableField("title_")
 	private String title;
 
 	private String requestUri;
 
-	@TableField("parameters_")
 	private String parameters;
 
-	@TableField("method_")
 	private String method;
 
 	private String clientHost;
 	private String userAgent;
 
-	@TableField("status_")
 	private Integer status;
 
-	@TableField(exist = false)
 	private String userName;
 
 	/**

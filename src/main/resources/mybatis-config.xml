@@ -7,10 +7,10 @@
 		<!-- 字段为空时仍调用model的set方法或map的put方法 -->
 		<setting name="callSettersOnNulls" value="true"/>
 	</settings>
-	<plugins>
-		<!-- 分页查询插件 -->
+	<!--<plugins>
+		&lt;!&ndash; 分页查询插件 &ndash;&gt;
 		<plugin interceptor="com.baomidou.mybatisplus.plugins.PaginationInterceptor">
 			<property name="dialectType" value="mysql" />
 		</plugin>
-	</plugins>
+	</plugins>-->
 </configuration>

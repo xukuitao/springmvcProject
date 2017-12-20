@@ -1,22 +1,14 @@
 package com.service;
 
-import com.alibaba.dubbo.common.utils.StringUtils;
-import com.baomidou.mybatisplus.plugins.Page;
 import com.bean.BaseModel;
 import com.mapper.SysEventMapper;
-import com.util.Constant;
-import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 
 public abstract class BaseService<T extends BaseModel> implements ApplicationContextAware {
@@ -29,7 +21,7 @@ public abstract class BaseService<T extends BaseModel> implements ApplicationCon
         this.applicationContext=applicationContext;
     }
 
-    public Page<T> query(Map<String, Object> map) {
+   /* public Page<T> query(Map<String, Object> map) {
         Page<Long> page=getPage(map);
         List<Long> list = mapper.selectIdPage(page, map);
         page.setRecords(list);
@@ -111,7 +103,7 @@ public abstract class BaseService<T extends BaseModel> implements ApplicationCon
         page.setAsc(false);
         return page;
     }
-
+*/
     private static boolean isNotEmpty(Object pObj) {
         if (pObj == null || "".equals(pObj))
             return false;

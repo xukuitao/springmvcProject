@@ -1,7 +1,7 @@
 package com.util;
 
-import com.baomidou.mybatisplus.toolkit.ArrayUtils;
 import com.esotericsoftware.reflectasm.MethodAccess;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.UnsupportedEncodingException;

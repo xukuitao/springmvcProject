@@ -6,8 +6,8 @@ import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.stereotype.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Map;
@@ -16,14 +16,17 @@ import java.util.Map;
  * Created by Administrator on 2017/12/12.
  */
 @Aspect
-@Component
-@EnableAspectJAutoProxy(proxyTargetClass = true)
+//@Component
+//@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class DataSourceAspect {
-    @Pointcut("this(com.interceptor.Provider)")
+    private static final Logger logger= LoggerFactory.getLogger(DataSourceAspect.class);
+    @Pointcut("execution(* com.interceptor.Provider.execute(..))")
+//    @Pointcut("execution(* com.interceptor.Provider.execute())")
     public void aspect(){}
 
     @Before("aspect()")
     public void before(JoinPoint joinPoint){
+        logger.info("=============qiemian===========");
         Parameter paramter= (Parameter) joinPoint.getArgs()[0];
         String method = paramter.getMethod();//select , update ,insert ......
         Map<String, Object> methodType = ChooseDataSource.METHOD_TYPE;

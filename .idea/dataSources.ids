@@ -1402,4 +1402,1406 @@ start_time</columns>
       </key>
     </database-model>
   </data-source>
+  <data-source name="MySQL - ibase4j@localhost" uuid="5fc2aa49-519e-467d-8adf-3784e4558d12">
+    <database-info product="MySQL" version="5.7.17-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="ibase4j"/>
+      <table id="2" parent="1" name="sys_article">
+        <comment>文章</comment>
+      </table>
+      <table id="3" parent="1" name="sys_dept">
+        <comment>部门</comment>
+      </table>
+      <table id="4" parent="1" name="sys_dic">
+        <comment>数据字典明细表</comment>
+      </table>
+      <table id="5" parent="1" name="sys_email">
+        <comment>邮件表</comment>
+      </table>
+      <table id="6" parent="1" name="sys_email_config">
+        <comment>邮件配置表</comment>
+      </table>
+      <table id="7" parent="1" name="sys_email_template">
+        <comment>邮件模版表</comment>
+      </table>
+      <table id="8" parent="1" name="sys_event"/>
+      <table id="9" parent="1" name="sys_menu">
+        <comment>菜单</comment>
+      </table>
+      <table id="10" parent="1" name="sys_msg">
+        <comment>短信</comment>
+      </table>
+      <table id="11" parent="1" name="sys_msg_config"/>
+      <table id="12" parent="1" name="sys_news">
+        <comment>新闻表</comment>
+      </table>
+      <table id="13" parent="1" name="sys_notice">
+        <comment>通知公告表</comment>
+      </table>
+      <table id="14" parent="1" name="sys_param">
+        <comment>全局参数表</comment>
+      </table>
+      <table id="15" parent="1" name="sys_role">
+        <comment>角色信息表</comment>
+      </table>
+      <table id="16" parent="1" name="sys_role_menu">
+        <comment>角色授权表</comment>
+      </table>
+      <table id="17" parent="1" name="sys_session">
+        <comment>会话管理</comment>
+      </table>
+      <table id="18" parent="1" name="sys_unit">
+        <comment>单位表</comment>
+      </table>
+      <table id="19" parent="1" name="sys_user">
+        <comment>用户管理</comment>
+      </table>
+      <table id="20" parent="1" name="sys_user_menu">
+        <comment>用户授权表</comment>
+      </table>
+      <table id="21" parent="1" name="sys_user_role">
+        <comment>用户授权表</comment>
+      </table>
+      <table id="22" parent="1" name="sys_user_thirdparty">
+        <comment>第三方用户</comment>
+      </table>
+      <table id="23" parent="1" name="task_fire_log"/>
+      <column id="24" parent="2" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="25" parent="2" name="type_">
+        <comment>类型</comment>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="26" parent="2" name="author_">
+        <comment>作者</comment>
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="27" parent="2" name="title_">
+        <comment>标题</comment>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="28" parent="2" name="content_">
+        <comment>内容</comment>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="29" parent="2" name="out_url">
+        <comment>外部链接</comment>
+        <data-type>varchar(512)</data-type>
+      </column>
+      <column id="30" parent="2" name="seo_keyword">
+        <comment>seo关键字</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="31" parent="2" name="seo_description">
+        <comment>seo描述</comment>
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="32" parent="2" name="is_top">
+        <comment>是否置顶</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="33" parent="2" name="enable_">
+        <comment>启用状态</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="34" parent="2" name="remark_">
+        <comment>备注</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="35" parent="2" name="create_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="36" parent="2" name="create_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="37" parent="2" name="update_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="38" parent="2" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="39" parent="2" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="40" parent="3" name="id_">
+        <comment>部门编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="41" parent="3" name="unit_id">
+        <comment>隶属单位</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="42" parent="3" name="dept_name">
+        <comment>部门名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="43" parent="3" name="parent_id">
+        <comment>上级部门编号</comment>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="44" parent="3" name="sort_no">
+        <comment>排序号</comment>
+        <data-type>int(3)</data-type>
+      </column>
+      <column id="45" parent="3" name="leaf_">
+        <comment>叶子节点(0:树枝节点;1:叶子节点)</comment>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="46" parent="3" name="enable_">
+        <comment>启用状态</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="47" parent="3" name="remark_">
+        <comment>备注</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="48" parent="3" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="49" parent="3" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="50" parent="3" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="51" parent="3" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="52" parent="3" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="53" parent="4" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="54" parent="4" name="type_">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="55" parent="4" name="code_">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="56" parent="4" name="code_text">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="57" parent="4" name="parent_type">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="58" parent="4" name="parent_code">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="59" parent="4" name="sort_no">
+        <data-type>int(2)</data-type>
+      </column>
+      <column id="60" parent="4" name="editable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="61" parent="4" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="62" parent="4" name="remark_">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="63" parent="4" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="64" parent="4" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="65" parent="4" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="66" parent="4" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="67" parent="4" name="type__code_">
+        <columns>type_
+code_</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="68" parent="4" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <key id="69" parent="4" name="type__code_">
+        <columns>type_
+code_</columns>
+        <underlying-index>type__code_</underlying-index>
+      </key>
+      <column id="70" parent="5" name="id_">
+        <comment>邮件编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="71" parent="5" name="email_name">
+        <comment>邮件名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="72" parent="5" name="sender_">
+        <comment>使用发送</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="73" parent="5" name="email_title">
+        <comment>发送标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="74" parent="5" name="email_content">
+        <comment>发送内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="75" parent="5" name="remark_">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="76" parent="5" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="77" parent="5" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="78" parent="5" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="79" parent="5" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="80" parent="5" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="81" parent="5" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="82" parent="6" name="id_">
+        <comment>邮件配置编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="83" parent="6" name="smtp_host">
+        <comment>SMTP服务器</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="84" parent="6" name="smtp_port">
+        <comment>SMTP服务器端口</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="85" parent="6" name="send_method">
+        <comment>发送方式</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="86" parent="6" name="sender_name">
+        <comment>名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="87" parent="6" name="sender_account">
+        <comment>发邮件邮箱账号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="88" parent="6" name="sender_password">
+        <comment>发邮件邮箱密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="89" parent="6" name="remark_">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="90" parent="6" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="91" parent="6" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="92" parent="6" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="93" parent="6" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="94" parent="6" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="95" parent="6" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="96" parent="7" name="id_">
+        <comment>邮件模版编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="97" parent="7" name="email_name">
+        <comment>邮件名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="98" parent="7" name="email_account">
+        <comment>发送邮件帐号</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="99" parent="7" name="sort_">
+        <comment>排序号</comment>
+        <data-type>int(5)</data-type>
+      </column>
+      <column id="100" parent="7" name="title_">
+        <comment>标题模版</comment>
+        <data-type>varchar(512)</data-type>
+      </column>
+      <column id="101" parent="7" name="template_">
+        <comment>内容模板</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="102" parent="7" name="remark_">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="103" parent="7" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="104" parent="7" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="105" parent="7" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="106" parent="7" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="107" parent="7" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="108" parent="7" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="109" parent="8" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="110" parent="8" name="title_">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="111" parent="8" name="request_uri">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="112" parent="8" name="parameters_">
+        <data-type>varchar(1024)</data-type>
+      </column>
+      <column id="113" parent="8" name="method_">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="114" parent="8" name="client_host">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="115" parent="8" name="user_agent">
+        <data-type>varchar(300)</data-type>
+      </column>
+      <column id="116" parent="8" name="status_">
+        <data-type>int(3)</data-type>
+      </column>
+      <column id="117" parent="8" name="enable_">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="118" parent="8" name="remark_">
+        <data-type>text</data-type>
+      </column>
+      <column id="119" parent="8" name="create_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="120" parent="8" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="121" parent="8" name="update_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="122" parent="8" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="123" parent="8" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="124" parent="9" name="id_">
+        <comment>菜单编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="125" parent="9" name="menu_name">
+        <comment>菜单名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="126" parent="9" name="menu_type">
+        <comment>菜单类型(0:CURD;1:系统菜单;2:业务菜单;)</comment>
+        <data-type>smallint(2)</data-type>
+        <default-expression>&apos;2&apos;</default-expression>
+      </column>
+      <column id="127" parent="9" name="parent_id">
+        <comment>上级菜单编号</comment>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="128" parent="9" name="iconcls_">
+        <comment>节点图标CSS类名</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="129" parent="9" name="request_">
+        <comment>请求地址</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="130" parent="9" name="expand_">
+        <comment>展开状态(1:展开;0:收缩)</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="131" parent="9" name="sort_no">
+        <comment>排序号</comment>
+        <data-type>int(2)</data-type>
+      </column>
+      <column id="132" parent="9" name="is_show">
+        <comment>叶子节点(0:树枝节点;1:叶子节点)</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="133" parent="9" name="permission_">
+        <comment>权限标识</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="134" parent="9" name="remark_">
+        <comment>备注</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="135" parent="9" name="enable_">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="136" parent="9" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="137" parent="9" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="138" parent="9" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="139" parent="9" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="140" parent="9" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="141" parent="10" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="142" parent="10" name="biz_id">
+        <comment>平台编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="143" parent="10" name="type_">
+        <comment>类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="144" parent="10" name="phone_">
+        <comment>接收短信号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="145" parent="10" name="content_">
+        <comment>短信内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="146" parent="10" name="send_state">
+        <comment>发送状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="147" parent="10" name="enable_">
+        <comment>启用状态</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="148" parent="10" name="remark_">
+        <comment>备注</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="149" parent="10" name="create_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="150" parent="10" name="create_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="151" parent="10" name="update_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="152" parent="10" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="153" parent="10" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="154" parent="11" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="155" parent="11" name="sms_plat_url">
+        <comment>短信平台地址</comment>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="156" parent="11" name="sms_plat_account">
+        <comment>短信平台帐号</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="157" parent="11" name="sms_plat_password">
+        <comment>短信平台密码</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="158" parent="11" name="send_phone">
+        <comment>发送短信</comment>
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="159" parent="11" name="sender_name">
+        <comment>发送短信签名</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="160" parent="11" name="order_is_send">
+        <comment>客户下订单时是否给商家发短信</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="161" parent="11" name="pay_is_send">
+        <comment>客户付款时是否给商家发短信</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="162" parent="11" name="send_goods_is_send">
+        <comment>商家发货时是否给客户发短信</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="163" parent="11" name="regist_is_send">
+        <comment>用户注册时是否给客户发短信</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="164" parent="11" name="advice_goods_is_send">
+        <comment>用户付款后是否给客户发收货验证码</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="165" parent="11" name="enable_">
+        <comment>启用状态</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="166" parent="11" name="remark_">
+        <comment>备注</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="167" parent="11" name="create_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="168" parent="11" name="create_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="169" parent="11" name="update_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="170" parent="11" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="171" parent="11" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="172" parent="12" name="id_">
+        <comment>新闻编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="173" parent="12" name="news_title">
+        <comment>新闻标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="174" parent="12" name="news_type">
+        <comment>新闻类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="175" parent="12" name="send_time">
+        <comment>发布时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="176" parent="12" name="author_">
+        <comment>作者</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="177" parent="12" name="editor_">
+        <comment>编辑</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="178" parent="12" name="tags_">
+        <comment>Tag标签</comment>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="179" parent="12" name="keys_">
+        <comment>关键字</comment>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="180" parent="12" name="content_">
+        <comment>内容</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="181" parent="12" name="reader_times">
+        <comment>阅读次数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="182" parent="12" name="status_">
+        <comment>发布状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="183" parent="12" name="remark_">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="184" parent="12" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="185" parent="12" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="186" parent="12" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="187" parent="12" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="188" parent="12" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="189" parent="12" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="190" parent="13" name="id_">
+        <comment>公告编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="191" parent="13" name="notice_title">
+        <comment>公告标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="192" parent="13" name="notice_type">
+        <comment>公告类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="193" parent="13" name="send_time">
+        <comment>发布时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="194" parent="13" name="info_sources">
+        <comment>信息来源</comment>
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="195" parent="13" name="sources_url">
+        <comment>来源地址</comment>
+        <data-type>varchar(2048)</data-type>
+      </column>
+      <column id="196" parent="13" name="content_">
+        <comment>内容</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="197" parent="13" name="reader_times">
+        <comment>阅读次数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="198" parent="13" name="status_">
+        <comment>发布状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="199" parent="13" name="remark_">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="200" parent="13" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="201" parent="13" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="202" parent="13" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="203" parent="13" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="204" parent="13" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="205" parent="13" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="206" parent="14" name="id_">
+        <comment>参数编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="207" parent="14" name="param_key">
+        <comment>参数键名</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="208" parent="14" name="param_value">
+        <comment>参数键值</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="209" parent="14" name="catalog_id">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="210" parent="14" name="remark_">
+        <comment>备注</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="211" parent="14" name="enable_">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="212" parent="14" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="213" parent="14" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="214" parent="14" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="215" parent="14" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="216" parent="14" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="217" parent="15" name="id_">
+        <comment>角色编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="218" parent="15" name="role_name">
+        <comment>角色名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="219" parent="15" name="dept_id">
+        <comment>所属部门编号</comment>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="220" parent="15" name="role_type">
+        <comment>角色类型(1:业务角色;2:管理角色 ;3:系统内置角色)</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="221" parent="15" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="222" parent="15" name="remark_">
+        <comment>备注</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="223" parent="15" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="224" parent="15" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="225" parent="15" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="226" parent="15" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="227" parent="15" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="228" parent="16" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="229" parent="16" name="role_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="230" parent="16" name="menu_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="231" parent="16" name="permission_">
+        <comment>权限标识</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="232" parent="16" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="233" parent="16" name="remark_">
+        <data-type>varchar(5000)</data-type>
+      </column>
+      <column id="234" parent="16" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="235" parent="16" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="236" parent="16" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="237" parent="16" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="238" parent="16" name="sys_role_menu_key1">
+        <columns>role_id
+menu_id
+permission_</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="239" parent="16" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <key id="240" parent="16" name="sys_role_menu_key1">
+        <columns>role_id
+menu_id
+permission_</columns>
+        <underlying-index>sys_role_menu_key1</underlying-index>
+      </key>
+      <column id="241" parent="17" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="242" parent="17" name="session_id">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="243" parent="17" name="account_">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="244" parent="17" name="ip_">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="245" parent="17" name="start_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="246" parent="17" name="enable_">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="247" parent="17" name="remark_">
+        <data-type>varchar(5000)</data-type>
+      </column>
+      <column id="248" parent="17" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="249" parent="17" name="create_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="250" parent="17" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="251" parent="17" name="update_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <key id="252" parent="17" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="253" parent="18" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="254" parent="18" name="unit_name">
+        <comment>单位名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="255" parent="18" name="principal_">
+        <comment>负责人</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="256" parent="18" name="phone_">
+        <comment>联系电话</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="257" parent="18" name="address_">
+        <comment>地址</comment>
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="258" parent="18" name="sort_">
+        <comment>排序号</comment>
+        <data-type>int(5)</data-type>
+      </column>
+      <column id="259" parent="18" name="enable_">
+        <comment>启用状态</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="260" parent="18" name="remark_">
+        <data-type>varchar(1024)</data-type>
+      </column>
+      <column id="261" parent="18" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="262" parent="18" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="263" parent="18" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="264" parent="18" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <key id="265" parent="18" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="266" parent="19" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="267" parent="19" name="account_">
+        <comment>登陆帐户</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="268" parent="19" name="password_">
+        <comment>密码</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="269" parent="19" name="user_type">
+        <comment>用户类型(1普通用户2管理员3系统用户)</comment>
+        <data-type>varchar(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="270" parent="19" name="user_name">
+        <comment>姓名</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="271" parent="19" name="name_pinyin">
+        <comment>姓名拼音</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="272" parent="19" name="sex_">
+        <comment>性别(0:未知;1:男;2:女)</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="273" parent="19" name="avatar_">
+        <comment>头像</comment>
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="274" parent="19" name="phone_">
+        <comment>电话</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="275" parent="19" name="email_">
+        <comment>邮箱</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="276" parent="19" name="id_card">
+        <comment>身份证号码</comment>
+        <data-type>varchar(18)</data-type>
+      </column>
+      <column id="277" parent="19" name="wei_xin">
+        <comment>微信</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="278" parent="19" name="wei_bo">
+        <comment>微博</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="279" parent="19" name="qq_">
+        <comment>QQ</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="280" parent="19" name="birth_day">
+        <comment>出生日期</comment>
+        <data-type>date</data-type>
+      </column>
+      <column id="281" parent="19" name="dept_id">
+        <comment>部门编号</comment>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="282" parent="19" name="position_">
+        <comment>职位</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="283" parent="19" name="address_">
+        <comment>详细地址</comment>
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="284" parent="19" name="staff_no">
+        <comment>工号</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="285" parent="19" name="enable_">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="286" parent="19" name="remark_">
+        <data-type>varchar(1024)</data-type>
+      </column>
+      <column id="287" parent="19" name="create_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="288" parent="19" name="create_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="289" parent="19" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="290" parent="19" name="update_by">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <index id="291" parent="19" name="account">
+        <columns>account_</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="292" parent="19" name="account">
+        <columns>account_</columns>
+        <underlying-index>account</underlying-index>
+      </key>
+      <key id="293" parent="19" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <column id="294" parent="20" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="295" parent="20" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="296" parent="20" name="menu_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="297" parent="20" name="permission_">
+        <comment>权限标识</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="298" parent="20" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="299" parent="20" name="remark_">
+        <data-type>varchar(5000)</data-type>
+      </column>
+      <column id="300" parent="20" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="301" parent="20" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="302" parent="20" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="303" parent="20" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="304" parent="20" name="sys_user_menu_key1">
+        <columns>user_id
+menu_id
+permission_</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="305" parent="20" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <key id="306" parent="20" name="sys_user_menu_key1">
+        <columns>user_id
+menu_id
+permission_</columns>
+        <underlying-index>sys_user_menu_key1</underlying-index>
+      </key>
+      <column id="307" parent="21" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="308" parent="21" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="309" parent="21" name="role_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="310" parent="21" name="enable_">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="311" parent="21" name="remark_">
+        <data-type>varchar(5000)</data-type>
+      </column>
+      <column id="312" parent="21" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="313" parent="21" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="314" parent="21" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="315" parent="21" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="316" parent="21" name="user_id_role_id">
+        <columns>user_id
+role_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="317" parent="21" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <key id="318" parent="21" name="user_id_role_id">
+        <columns>user_id
+role_id</columns>
+        <underlying-index>user_id_role_id</underlying-index>
+      </key>
+      <column id="319" parent="22" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="320" parent="22" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="321" parent="22" name="provider_">
+        <comment>第三方类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="322" parent="22" name="open_id">
+        <comment>第三方Id</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="323" parent="22" name="enable_">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="324" parent="22" name="remark_">
+        <data-type>varchar(5000)</data-type>
+      </column>
+      <column id="325" parent="22" name="create_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="326" parent="22" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="327" parent="22" name="update_by">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="328" parent="22" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="329" parent="22" name="user_id_provider__open_id">
+        <columns>user_id
+provider_
+open_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="330" parent="22" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+      <key id="331" parent="22" name="user_id_provider__open_id">
+        <columns>user_id
+provider_
+open_id</columns>
+        <underlying-index>user_id_provider__open_id</underlying-index>
+      </key>
+      <column id="332" parent="23" name="id_">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="333" parent="23" name="group_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="334" parent="23" name="task_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="335" parent="23" name="start_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="336" parent="23" name="end_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="337" parent="23" name="status_">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1)</data-type>
+        <default-expression>&apos;I&apos;</default-expression>
+      </column>
+      <column id="338" parent="23" name="server_host">
+        <comment>服务器名</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="339" parent="23" name="server_duid">
+        <comment>服务器网卡序列号</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="340" parent="23" name="fire_info">
+        <data-type>text</data-type>
+      </column>
+      <index id="341" parent="23" name="group_name_task_name_start_time">
+        <columns>group_name
+task_name
+start_time</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="342" parent="23" name="group_name_task_name_start_time">
+        <columns>group_name
+task_name
+start_time</columns>
+        <underlying-index>group_name_task_name_start_time</underlying-index>
+      </key>
+      <key id="343" parent="23" name="PRIMARY">
+        <columns>id_</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
 </component>
